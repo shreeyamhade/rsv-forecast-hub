@@ -8,8 +8,8 @@
   },
   "repository": {
     "host": "github",
-    "owner": "hubverse-org",
-    "name": "hubTemplate"
+    "owner": "cdcent",
+    "name": "cfa-internal-rsv-forecast-hub"
   },
   "file_format": [
     "csv",
