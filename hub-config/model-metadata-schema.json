@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Schema for RSV forecast hub model metadata",
-  "description": "This is the schema for model metadata files, please refer to https://github.com/CDCgov/covid19-forecast-hub/blob/main/model-metadata/README.md for more information.",
+  "description": "This is the schema for model metadata files.",
   "type": "object",
   "properties": {
     "team_name": {
@@ -120,7 +120,7 @@
       "type": "boolean"
     },
     "designated_github_users": {
-      "description": "Team member(s) who would be responsible for submitting forecasts as a pull request to the CovidHub repository. Only the pull request from users specified here can get merged automatically after validation.",
+      "description": "Github usernames of team member(s) authorized to submit forecasts as a pull request to the RSV Hub repository. Only the pull request from the users specified here can get merged automatically after validation.",
       "items": {
         "type": "string"
       }
