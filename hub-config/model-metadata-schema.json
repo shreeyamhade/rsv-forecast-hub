@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Schema for RSV forecast hub model metadata",
+  "title": "Schema for RSV forecast hub model metadata.",
   "description": "This is the schema for model metadata files.",
   "type": "object",
   "properties": {
