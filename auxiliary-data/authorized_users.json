@@ -51,6 +51,8 @@
   },
   {
     "model_id": "UM-DeepOutbreak",
-    "authorized_github_users": []
+    "authorized_github_users": [
+      "RRemixx"
+    ]
   }
 ]
