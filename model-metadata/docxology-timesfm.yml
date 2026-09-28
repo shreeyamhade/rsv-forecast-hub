@@ -1,0 +1,16 @@
+team_name: "docxology"
+team_abbr: "docxology"
+model_name: "docxology timesfm"
+model_abbr: "timesfm"
+model_contributors: [{"name": "Daniel Ari Friedman", "affiliation": "Private Investigator", "email": "danielarifriedman@gmail.com"}]
+license: "CC0-1.0"
+designated_model: true
+data_inputs: "Retained weekly wk inc rsv hosp target observations from the CDCgov/rsv-forecast-hub hub/NHSN. No other submitted hub forecasts are model inputs. External pretrained checkpoint google/timesfm-2.5-200m-pytorch at revision 1d952420fba87f3c6dee4f240de0f1a0fbc790e3; its pretraining corpus is external."
+methods: "Frozen TimesFM 2.5 point forecasts with training-prefix empirical residual quantiles"
+methods_long: "Proposed candidate docxology-timesfm, version 1.0.0. Frozen TimesFM 2.5 point forecasts with training-prefix empirical residual quantiles Frozen pretrained TimesFM weights produce point forecasts; matured training-prefix residuals supply predictive quantiles. There is no local gradient fine-tuning or explicit geographic covariance model. Pretraining data are an external information source. Target: wk inc rsv hosp. Requested forecast horizons: [0, 1, 2, 3]. Submission value policy: float; the submission adapter enforces nonnegative monotone quantiles. Each future submission must retain its actual input vintage, source/config identities and local validation. This draft does not assert scientific superiority, prospective selection/freeze, organizer registration or acceptance. Development-based configuration choices do not establish performance on this disease. The implementation, fitted-state records and detailed configuration are retained privately. This methods description does not grant a source-code license."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: "https://github.com/docxology"
+model_version: "1.0.0"
+designated_github_users: ["docxology"]
+designated_targets: ["wk inc rsv hosp"]
